@@ -16,6 +16,7 @@ public interface LancamentoRepositoryPort {
     Optional<Lancamento> buscarPorId(UUID id);
     Optional<Lancamento> buscarPorChaveIdempotencia(String chave);
     List<Lancamento> listarPorData(LocalDate data);
+    //lancamentoRepository.listarPorPeriodo(inicio, fim)
     long contarPorData(LocalDate data);
 
 }
