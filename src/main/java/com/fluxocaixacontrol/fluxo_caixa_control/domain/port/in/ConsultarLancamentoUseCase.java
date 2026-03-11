@@ -10,7 +10,7 @@ import java.util.UUID;
 public interface ConsultarLancamentoUseCase {
     Lancamento buscarPorId(UUID id);
     List<Lancamento> listarPorData(LocalDate data);
-
+    //lancamentoRepository.listarPorPeriodo(inicio, fim)
     class LancamentoNaoEncontradoException extends RuntimeException{
         public LancamentoNaoEncontradoException(UUID id) {
 
